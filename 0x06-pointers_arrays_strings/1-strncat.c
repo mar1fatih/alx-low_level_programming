@@ -20,4 +20,5 @@ for (i = 0; i < n && src[i] != '\0'; i++)
 dest[d + i] = src[i];
 }
 dest[d + i] = '\0';
+return (dest);
 }
