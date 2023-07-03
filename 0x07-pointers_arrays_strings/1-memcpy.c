@@ -15,6 +15,5 @@ while (i < n)
 dest[i] = src[i];
 i++;
 }
-printf("\n");
 return (dest);
 }
