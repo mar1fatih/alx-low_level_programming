@@ -6,15 +6,13 @@
 */
 void print_diagsums(int *a, int size)
 {
-int i = 0, c = 0, j = 0;
-int (*ptr)[size];
-
-ptr = (int (*)[size])a;
+int i = 0, c = 0, j;
 
 for (j = 0; j < size; j++)
 {
-i += ptr[j][j];
-c += ptr[j][size - j - 1];
+i += a[j][j];
+c += a[j][size - j - 1];
+a += size;
 }
 
 printf("%d", i);
