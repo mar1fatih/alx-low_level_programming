@@ -10,8 +10,8 @@ int i = 0, c = 0, j;
 
 for (j = 0; j < size; j++)
 {
-i += a[j][j];
-c += a[j][size - j - 1];
+i += a[j];
+c += a[size - j - 1];
 a += size;
 }
 
