@@ -25,15 +25,16 @@ return (str);
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *p;
+
 if (size == 0 || nmemb == 0)
 {
 return (NULL);
 }
-p = malloc(sizeof(int) * nmemb);
-if (p == 0)
+p = malloc(size * nmemb);
+if (p == NULL)
 {
 return (NULL);
 }
-_zero(p, 0, sizeof(int) * nmemb);
+_zero(p, 0, size * nmemb);
 return (p);
 }
