@@ -8,15 +8,13 @@
 */
 char *_zero(char *str, char a, unsigned int n)
 {
-char *p;
+unsigned int i;
 
-p = str;
-while (n--)
+for (i = 0; i < n; i++)
 {
-*str = a;
-str++;
+str[i] = a;
 }
-return (p);
+return (str);
 }
 /**
  * _calloc - l
