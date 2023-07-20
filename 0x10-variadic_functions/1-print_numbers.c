@@ -10,6 +10,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 int i = 0, j = n;
 va_list nptr;
 
+if (n == 0)
+	return (0);
 va_start(nptr, n);
 do {
 printf("%d", va_arg(nptr, int));
