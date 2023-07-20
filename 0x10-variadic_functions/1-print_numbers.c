@@ -17,12 +17,17 @@ do {
 printf("%d", va_arg(nptr, int));
 i++;
 j--;
-if (i != j && separator != NULL)
+if (i != (int) n && separator != NULL)
 {
 printf("%s", separator);
 }
 } while (j != 0);
 printf("\n");
 va_end(nptr);
+}
+else
+{
+printf("\n");
+return;
 }
 }
