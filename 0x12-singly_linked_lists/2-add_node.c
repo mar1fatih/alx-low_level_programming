@@ -36,7 +36,7 @@ return (dup);
  * @str: l
  * Return: int
  */
-int len(char *str)
+int slen(char *str)
 {
 	int i = 0;
 
@@ -72,7 +72,7 @@ if (ptr->str == NULL)
 free(ptr);
 return (NULL);
 }
-ptr->len = len(ptr->str);
+ptr->len = slen(ptr->str);
 }
 ptr->next = *head;
 *head = ptr;
