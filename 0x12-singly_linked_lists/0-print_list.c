@@ -11,9 +11,8 @@ if (str == NULL)
 {
 return (0);
 }
-while (*str != '\0')
+while (*str++)
 {
-str++;
 i++;
 }
 return (i);
@@ -29,9 +28,9 @@ size_t print_list(const list_t *h)
 size_t j = 0;
 while (h != NULL)
 {
-printf("[%d] %s\n", len(h->str), h->str ? h->str : "(nill)");
+printf("[%d] %s\n", len(h->str), h->str ? h->str : "(nil)");
 h = h->next;
 j++;
 }
-return (i);
+return (j);
 }
