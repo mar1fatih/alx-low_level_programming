@@ -32,7 +32,7 @@ return (dup);
 }
 
 /**
- * len - length of string
+ * slen - length of string
  * @str: l
  * Return: int
  */

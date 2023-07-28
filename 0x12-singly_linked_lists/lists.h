@@ -2,7 +2,6 @@
 #define LISTS_H
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -18,7 +17,7 @@ struct list_s *next;
 } list_t;
 
 char* _strdup(const char* str);
-int len(char *str);
+int slen(char *str);
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
