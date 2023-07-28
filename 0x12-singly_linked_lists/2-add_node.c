@@ -75,6 +75,6 @@ return (NULL);
 ptr->len = len(ptr->str);
 }
 ptr->next = *head;
-*head = ptr
+*head = ptr;
 return (ptr);
 }
