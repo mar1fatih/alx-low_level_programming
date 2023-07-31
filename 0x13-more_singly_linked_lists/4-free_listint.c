@@ -5,5 +5,14 @@
 */
 void free_listint(listint_t *head)
 {
-	  free(head);
+listint_t *current;
+listint_t *ptr;
+
+current = head;
+while (current)
+{
+	ptr = current;
+	current = current->next;
+	free(ptr);
+}
 }
