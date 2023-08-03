@@ -10,7 +10,7 @@ unsigned int i = 1, j = 2;
 
 while (a > 0)
 {
-i = i *j;
+i = i * j;
 a--;
 }
 return (i);
