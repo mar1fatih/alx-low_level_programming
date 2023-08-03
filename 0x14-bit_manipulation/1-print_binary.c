@@ -1,59 +1,27 @@
 #include "main.h"
 /**
- * twosquar - check the code
- * @a: a
- * Return: int
-*/
-unsigned long int twosquar(int a)
-{
-	unsigned long int i = 1, j = 2;
-
-	while (a > 0)
-	{
-		i = i * j;
-		a--;
-	}
-	return (i);
-}
-/**
  * print_binary - check the code
  * @n: n
+ * Return: void
 */
 void print_binary(unsigned long int n)
 {
-	int len = 30;
-	int i, c;
-	unsigned long int sqr;
+int p = 0, len = sizeof(n) * 8;
 
-	c = len;
-	if (n == 1)
-	{
-		_putchar('1');
-		return;
-	}
-	sqr = twosquar(len);
-	for (i = 0; i < c; i++)
-	{
-		if (n >= sqr)
-		{
-			for (i = 0; i <= len; i++)
-			{
-				if (n >= sqr)
-				{
-					_putchar('1');
-					n = n - sqr;
-					sqr = sqr / 2;
-				}
-				else
-				{
-					_putchar('0');
-					sqr = sqr / 2;
-				}
-			}
-			return;
-		}
-		len--;
-		sqr = sqr / 2;
-	}
-	_putchar('0');
+while (len != 0)
+{
+if (n & 1l << --len)
+{
+_putchar('1');
+p = p + 1;
+}
+else if (p != 0)
+{
+_putchar('0');
+}
+}
+if (p == 0)
+{
+_putchar('0');
+}
 }
