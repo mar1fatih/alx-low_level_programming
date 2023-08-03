@@ -17,7 +17,7 @@ if ((i & 1ul) != 0)
 {
 c++;
 }
-i = i >> 1ul;
+i = i >> 1l;
 }
 return (c);
 }
