@@ -4,6 +4,7 @@
 #include <stdlib.h>
 int _putchar(char c);
 unsigned int twosquarl(int a);
+unsigned long int twosquar(int a);
 int _strlen(const char *str);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);

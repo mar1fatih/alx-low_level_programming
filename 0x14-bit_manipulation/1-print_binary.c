@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * twosquarl - check the code
+ * twosquar - check the code
  * @a: a
  * Return: int
 */
-unsigned int twosquarl(int a)
+unsigned long int twosquar(int a)
 {
-	unsigned int i = 1, j = 2;
+	unsigned long int i = 1, j = 2;
 
 	while (a > 0)
 	{
@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 {
 	int len = 30;
 	int i, c;
-	unsigned int sqr;
+	unsigned long int sqr;
 
 	c = len;
 	if (n == 1)
@@ -31,7 +31,7 @@ void print_binary(unsigned long int n)
 		_putchar('1');
 		return;
 	}
-	sqr = twosquarl(len);
+	sqr = twosquar(len);
 	for (i = 0; i < c; i++)
 	{
 		if (n >= sqr)
@@ -55,5 +55,5 @@ void print_binary(unsigned long int n)
 		len--;
 		sqr = sqr / 2;
 	}
-	_putchar ('0');
+	_putchar('0');
 }
