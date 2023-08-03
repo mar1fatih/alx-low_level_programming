@@ -8,7 +8,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned long int i;
-unsigned int c;
+int c = 0;
 
 i = n ^ m;
 while (i != 0)
@@ -17,7 +17,7 @@ if ((i & 1ul) != 0)
 {
 c++;
 }
-i = i >> 1;
+i = i >> 1ul;
 }
 return (c);
 }
