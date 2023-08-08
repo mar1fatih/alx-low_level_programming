@@ -1,0 +1,27 @@
+#include "main.h"
+/**
+ * read_textfile - check the code
+ * @filename: filname
+ * @letters: letters
+ * Return: ssize_t
+*/
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+int ptr;
+ssize_t i;
+char arr[buff * 8];
+
+if (filename == NULL || letters == NULL)
+{
+return (0);
+}
+ptr = open(filename, O_RDONLY);
+if (ptr == -1)
+{
+return (0);
+}
+i = read(ptr, arr, letters);
+i = write(STDOUT_FILEND, arr, i);
+close(ptr);
+return (0);
+}
