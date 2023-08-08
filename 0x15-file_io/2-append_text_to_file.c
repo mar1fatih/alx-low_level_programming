@@ -45,12 +45,5 @@ if (l != 0)
 i = write(ptr, text_content, l);
 }
 close(ptr);
-if (i == l)
-{
-return (1);
-}
-else
-{
-return (-1);
-}
+return (i == l ? 1 : -1);
 }
