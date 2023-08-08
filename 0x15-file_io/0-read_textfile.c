@@ -20,8 +20,8 @@ if (ptr == -1)
 {
 return (0);
 }
-i = read(ptr, &arr[0], letters);
-i = write(STDOUT_FILENO, &arr[0], i);
+i = read(ptr, arr, letters);
+i = write(STDOUT_FILENO, arr, i);
 close(ptr);
-return (0);
+return (i);
 }
