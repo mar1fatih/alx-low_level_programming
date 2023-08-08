@@ -27,8 +27,8 @@ return (i);
 */
 int create_file(const char *filename, char *text_content)
 {
-ssize_t i = 0;
-int ptr, l;
+ssize_t i = 0, l;
+int ptr;
 
 l = slen(text_content);
 if (filename == NULL)
