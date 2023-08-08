@@ -35,7 +35,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-ptr = open(filename, O_WRONLY, O_APPEND);
+ptr = open(filename, O_WRONLY | O_APPEND);
 if (ptr == -1)
 {
 return (-1);
