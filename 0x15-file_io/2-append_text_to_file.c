@@ -40,7 +40,7 @@ if (ptr == -1)
 {
 return (-1);
 }
-if (l > 0)
+if (l != 0)
 {
 i = write(ptr, text_content, l);
 }
