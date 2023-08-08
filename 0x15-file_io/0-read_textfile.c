@@ -11,7 +11,7 @@ int ptr;
 ssize_t i;
 char arr[buff * 8];
 
-if (filename == NULL || letters == NULL)
+if (filename == NULL || !letters)
 {
 return (0);
 }
@@ -21,7 +21,7 @@ if (ptr == -1)
 return (0);
 }
 i = read(ptr, arr, letters);
-i = write(STDOUT_FILEND, arr, i);
+i = write(STDOUT_FILENO, arr, i);
 close(ptr);
 return (0);
 }
