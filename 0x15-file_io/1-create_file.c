@@ -33,12 +33,12 @@ int ptr;
 l = slen(text_content);
 if (filename == NULL)
 {
-return (0);
+return (-1);
 }
 ptr = open(filename, O_WRONLY | O_CREAT | O_TRUNC);
 if (ptr == -1)
 {
-return (0);
+return (-1);
 }
 if (l > 0)
 {
