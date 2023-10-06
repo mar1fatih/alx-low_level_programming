@@ -3,7 +3,7 @@
  * hash_table_get - check the code
  * @ht: ht
  * @key: key
- * Return: char 
+ * Return: char
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
