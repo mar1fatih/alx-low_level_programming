@@ -12,11 +12,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!size)
 		return (NULL);
 	newtable = malloc(sizeof(hash_table_t));
-if (!newtable)
-	return (NULL);
+	if (!newtable)
+		return (NULL);
 	newtable->size = size;
 	newtable->array = malloc(sizeof(hash_node_t *) * size);
-	if (!(newtable->array))
+	if (!newtable->array)
 	{
 		free(newtable);
 		return (NULL);
